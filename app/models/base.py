@@ -85,6 +85,7 @@ class BankAccount:
         print(
             f"  Chuyển {amount:,.0f}đ → '{other.owner}'. "
             f"Số dư còn: {self._balance:,.0f}đ"
+            f"{'  Ghi chú: ' + note if note else ''}"
         )
 
     def print_history(self) -> None:
