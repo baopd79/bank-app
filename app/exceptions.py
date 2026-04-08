@@ -12,9 +12,7 @@ class InsufficientFundsError(BankError):
     def __init__(self, balance: float, amount: float) -> None:
         self.balance = balance
         self.amount = amount
-        super().__init__(
-            f"Số dư không đủ. Hiện có: {balance:,.0f}đ, cần: {amount:,.0f}đ"
-        )
+        super().__init__(f"Số dư không đủ. có: {balance:,.0f}đ, cần: {amount:,.0f}đ")
 
 
 class InvalidAmountError(BankError):
